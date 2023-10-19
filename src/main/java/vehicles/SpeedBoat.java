@@ -4,8 +4,8 @@ import products.IProduct;
 
 public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised{
 
-    String hullType;
-    IMotorised motor;
+    private String hullType;
+    private IMotorised motor;
 
 
 
@@ -28,7 +28,7 @@ public class SpeedBoat extends Vehicle implements IWaterVehicle, IMotorised{
     @Override
     public String stopEngine() {
         return this.motor.stopEngine();
-        
+
     }
 
     @Override
